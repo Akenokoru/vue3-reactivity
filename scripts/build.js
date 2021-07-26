@@ -14,7 +14,7 @@ console.log(dirs);
 
 async function build(target) {
   console.log('target--', target)
-  await execa('rollup', ['-c', '--environment', `TARGET: ${target}`])
+  await execa('rollup', ['-c', '--environment', `TARGET:${target}`], {stdio: 'inherit'})
 }
 
 async function runParallel(dirs, iterFn) {
