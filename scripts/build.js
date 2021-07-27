@@ -26,5 +26,5 @@ async function runParallel(dirs, iterFn) {
 }
 
 runParallel(dirs, build).then(() => {
-  console.log('success')
+  console.log('build success')
 })
